@@ -17,11 +17,11 @@ omarchy pkg add headsetcontrol
 Then the widget:
 
 ```bash
-git clone https://github.com/gabrielsitta4/omarchy-headset ~/Documents/Projetos/omarchy-headset
+git clone https://github.com/gabrielsitta4/omarchy-headset ~/Documents/Projects/omarchy-headset
 mkdir -p ~/.config/omarchy/plugins ~/.config/omarchy/bar/scripts
-ln -s ~/Documents/Projetos/omarchy-headset ~/.config/omarchy/plugins/local.headset
-ln -s ~/Documents/Projetos/omarchy-headset/headset-battery ~/.config/omarchy/bar/scripts/headset-battery
-ln -s ~/Documents/Projetos/omarchy-headset/headset-set ~/.config/omarchy/bar/scripts/headset-set
+ln -s ~/Documents/Projects/omarchy-headset ~/.config/omarchy/plugins/local.headset
+ln -s ~/Documents/Projects/omarchy-headset/headset-battery ~/.config/omarchy/bar/scripts/headset-battery
+ln -s ~/Documents/Projects/omarchy-headset/headset-set ~/.config/omarchy/bar/scripts/headset-set
 omarchy-shell shell rescanPlugins
 omarchy bar put local.headset --before omarchy.audio
 ```
@@ -37,6 +37,6 @@ Check that the headset is found with `headsetcontrol -b`.
 ## Update
 
 ```bash
-git -C ~/Documents/Projetos/omarchy-headset pull
+git -C ~/Documents/Projects/omarchy-headset pull
 omarchy restart shell
 ```
